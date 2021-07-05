@@ -6,7 +6,8 @@
 }
 
 #profile-page {
-    height: 1200px; /*todo: da rimuovere*/
+    height: 1200px;
+    /*todo: da rimuovere*/
     width: 600px;
     margin: 0 auto;
 }
@@ -17,7 +18,7 @@
     margin: 15px 0;
 }
 
-.user-details .user-pic{
+.user-details .user-pic {
     width: 50px;
     height: 50px;
     overflow: hidden;
@@ -30,8 +31,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    
+    transform: translate(-50%, -50%);
 }
 
 .user-details .user-name {
@@ -60,15 +60,18 @@
     font-weight: bold;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-
 }
-
 
 .post {
     border: 1px #ccc solid;
     border-radius: 5px;
     box-shadow: 0 0 3px #ccc;
     padding: 15px;
+}
+
+.post-details i {
+    margin-left: 30px;
+    cursor: pointer;
 }
 
 .post-media img {

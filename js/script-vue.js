@@ -39,7 +39,11 @@ new Vue({
                 })
             }
             this.inputText = "";
+        },
+        deletePost: function(index) {
+            this.myProfile.posts.splice(index, 1)
         }
+
     }
 
 });
