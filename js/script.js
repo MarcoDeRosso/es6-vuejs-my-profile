@@ -49,6 +49,7 @@ data.myProfile.posts.forEach((post) => {
             <div class="user-name">${data.myProfile.details.name} ${data.myProfile.details.surname}</div>
             <div class="post-date">${post.date}</div>
         </div>
+        <i class="fas fa-trash-alt"></i>
     </div> 
     <div class="post-text">
         ${post.text}
@@ -67,7 +68,7 @@ data.myProfile.posts.forEach((post) => {
     // dobbiamo inserirlo nel suo container <div class="post"></div>
     // e il tutto dentro postListHtml.innerHtml.
 
-    postListHtml.innerHTML += `<div class="post"> ${postHtml} </div>`
+    postListHtml.innerHTML += `<div class="post"> ${postHtml}  </div>`
 })
 
 let buttonInput = document.querySelector(".send");
@@ -90,12 +91,24 @@ buttonInput.addEventListener("click", function() {
         <div class="user-name">${data.myProfile.details.name} ${data.myProfile.details.surname}</div>
         <div class="post-date">${time.format("DD-MM-YYYY")}</div>
     </div>
+    <i class="fas fa-trash-alt"></i>
 </div> 
 <div class="post-text">
     ${valueInput}
 </div>
     `
 
-    postListHtml.innerHTML += `<div class="post"> ${post} </div>`
+    postListHtml.innerHTML += `<div class="post"> ${post}  </div>`
 
 });
+
+// let deleteButton = document.querySelectorAll("i.fa-trash-alt")
+
+
+// deleteButton.forEach((post, index) => {
+//     post.addEventListener("click", function() {
+//         let deleteAll = document.getElementsByClassName("post");
+//         deleteAll[index].innerHTML = `<div class="delete"></div>`;
+//     })
+
+// })
